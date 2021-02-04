@@ -1,13 +1,12 @@
 import React, {useRef, useState} from 'react';
 import './App.css';
-import {defaultRepoResult, RepositoryForm, RepositoryFormResult} from "./RepositoryForm";
+import {defaultRepoResult, RepositoryForm, RepositoryFormResult} from "./components/RepositoryForm";
 import {Commit, createCommitFromJson, getCommitsUrlForRepo} from "./commits.util";
-import {CommitsList} from "./CommitsList";
-import {useInfiniteScroll} from "./UseInfiniteScroll";
+import {CommitsList} from "./components/CommitsList";
+import {useInfiniteScroll} from "./hooks/UseInfiniteScroll";
 import axios, {AxiosError, AxiosResponse} from "axios";
 import loadingSvg from "./Rolling-1s-100px.svg"
 
-// const ACCESS_TOKEN = `1be428951bffe33129ae461117525afd9f591634`;
 const COMMITS_PER_PAGE = 10;
 export const BASE_URL = `https://api.github.com/repos`;
 
@@ -15,7 +14,7 @@ export const client = axios.create({
   baseURL: BASE_URL,
   // Used for development
   // headers: {
-    // 'Authorization': `token ${ACCESS_TOKEN}`
+  //   'Authorization': `token ${ACCESS_TOKEN}`
   // }
 })
 

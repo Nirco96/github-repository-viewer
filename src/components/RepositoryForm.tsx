@@ -1,7 +1,7 @@
 import {ChangeEvent, useState} from "react";
 import {BranchSelect} from "./BranchSelect";
-import {client} from "./App";
-import {getBranchesUrlForRepo} from "./commits.util";
+import {client} from "../App";
+import {getBranchesUrlForRepo} from "../commits.util";
 import "./RepositoryForm.css"
 
 export type RepositoryFormResult = {

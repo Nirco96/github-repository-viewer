@@ -1,6 +1,6 @@
 import {useEffect, useRef} from "react";
 import * as d3 from "d3";
-import {BASE_URL} from "./App";
+import {BASE_URL} from "../App";
 
 type CommitStatistics = {
   total: number,

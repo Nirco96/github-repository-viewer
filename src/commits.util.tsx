@@ -1,4 +1,4 @@
-import {RepositoryFormResult} from "./RepositoryForm";
+import {RepositoryFormResult} from "./components/RepositoryForm";
 
 export interface Commit {
   author: string,

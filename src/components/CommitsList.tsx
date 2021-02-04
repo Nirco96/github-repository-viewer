@@ -1,4 +1,4 @@
-import {Commit} from "./commits.util";
+import {Commit} from "../commits.util";
 import "./CommitsList.css";
 import {ChangeEvent, useState} from "react";
 
