@@ -1,0 +1,10 @@
+.wideCentered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.repoButtons {
+    width: 150px;
+    margin: 5px;
+}
